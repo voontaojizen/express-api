@@ -15,7 +15,9 @@ const port = process.env.PORT || 3000;
 
 app.use(cors({ origin: '*' }));
 
-app.get('/blogs', (req: Request, res: Response) => {
+const router = express.Router();
+
+router.get('/blogs', (req: Request, res: Response) => {
   const blogs: Blog[] = [
     { id: '1', title: 'Blog 1', content: 'Content 1' },
     { id: '2', title: 'Blog 2', content: 'Content 2' },
@@ -24,6 +26,8 @@ app.get('/blogs', (req: Request, res: Response) => {
   ];
   res.json({ blogs });
 });
+
+app.use('/api', router);
 
 app.listen(port, () => {
   console.log(`[server]: Server is running at http://localhost:${port}`);
