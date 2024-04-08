@@ -1,12 +1,12 @@
-import express, { Express, Request, Response } from "express";
-import dotenv from "dotenv";
+import express, { Express, Request, Response } from 'express';
+import dotenv from 'dotenv';
 import cors from 'cors';
 
 type Blog = {
   id: string;
   title: string;
   content: string;
-}
+};
 
 dotenv.config();
 
