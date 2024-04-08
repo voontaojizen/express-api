@@ -3,7 +3,13 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", "public/**", "public/dist/**", "api/**"]
+      "outputs": [
+        "dist/**",
+        "public/**",
+        "public/dist/**",
+        "api/**",
+        ".vercel/**"
+      ]
     },
     "test": {},
     "lint": {},
