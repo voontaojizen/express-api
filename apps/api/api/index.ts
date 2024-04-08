@@ -31,8 +31,8 @@ router.get('/blogs', (req: Request, res: Response) => {
   res.json({ blogs });
 });
 
-// app.use('/api', router);
+app.use('/api', router);
 
-// app.listen(port, () => {
-//   console.log(`[server]: Server is running at http://localhost:${port}`);
-// });
+app.listen(port, () => {
+  console.log(`[server]: Server is running at http://localhost:${port}`);
+});
