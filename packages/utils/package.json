@@ -11,6 +11,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@core/types": "workspace:^"
+    "types": "workspace:^"
   }
 }

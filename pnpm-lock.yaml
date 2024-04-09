@@ -10,6 +10,9 @@ importers:
 
   apps/api:
     dependencies:
+      '@core/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
       cors:
         specifier: ^2.8.5
         version: 2.8.5
@@ -26,9 +29,6 @@ importers:
       '@core/types':
         specifier: workspace:^
         version: link:../../packages/types
-      '@core/utils':
-        specifier: workspace:^
-        version: link:../../packages/utils
       '@types/cors':
         specifier: ^2.8.17
         version: 2.8.17
