@@ -20,6 +20,12 @@ importers:
         specifier: ^4.19.2
         version: 4.19.2
     devDependencies:
+      '@core/types':
+        specifier: workspace:^
+        version: link:../../packages/types
+      '@core/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
       '@types/cors':
         specifier: ^2.8.17
         version: 2.8.17
@@ -38,6 +44,18 @@ importers:
       typescript:
         specifier: ^5.4.4
         version: 5.4.4
+
+  packages/types:
+    devDependencies:
+      typescript:
+        specifier: ^5.4.4
+        version: 5.4.4
+
+  packages/utils:
+    devDependencies:
+      '@core/types':
+        specifier: workspace:^
+        version: link:../types
 
 packages:
 

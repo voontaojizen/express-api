@@ -1,12 +1,8 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-
-type Blog = {
-  id: string;
-  title: string;
-  content: string;
-};
+import type { Blog } from '@core/types';
+import { returnBlogs } from '@core/utils';
 
 dotenv.config();
 
@@ -22,12 +18,7 @@ router.get('/', (req, res) => {
 });
 
 router.get('/blogs', (req: Request, res: Response) => {
-  const blogs: Blog[] = [
-    { id: '1', title: 'Blog 1', content: 'Content 1' },
-    { id: '2', title: 'Blog 2', content: 'Content 2' },
-    { id: '3', title: 'Blog 3', content: 'Content 3' },
-    { id: '4', title: 'Blog 4', content: 'Content 4' },
-  ];
+  const blogs: Blog[] = returnBlogs();
   res.json({ blogs });
 });
 
