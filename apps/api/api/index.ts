@@ -1,8 +1,8 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import type { Blog } from '@core/types';
 import { returnBlogs } from '@core/utils';
+import type { Blog } from '@core/types';
 
 dotenv.config();
 
