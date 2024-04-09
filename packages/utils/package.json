@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@core/types": "workspace:^"
+    "@core/types": "workspace:^",
+    "typescript": "^5.4.4"
   }
 }
