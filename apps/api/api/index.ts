@@ -1,8 +1,8 @@
 import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import type { Blog } from '@core/types';
-import { returnBlogs } from '@core/utils';
+// import type { Blog } from '@core/types';
+// import { returnBlogs } from '@core/utils';
 
 dotenv.config();
 
@@ -18,7 +18,8 @@ router.get('/', (req, res) => {
 });
 
 router.get('/blogs', (req: Request, res: Response) => {
-  const blogs: Blog[] = returnBlogs();
+  // const blogs: Blog[] = returnBlogs();
+  const blogs = [];
   res.json({ blogs });
 });
 
