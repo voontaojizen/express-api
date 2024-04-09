@@ -48,8 +48,6 @@ importers:
         specifier: ^5.4.4
         version: 5.4.4
 
-  packages/ts: {}
-
   packages/tsconfig: {}
 
   packages/types:
