@@ -20,6 +20,9 @@ importers:
         specifier: ^4.19.2
         version: 4.19.2
     devDependencies:
+      '@core/tsconfig':
+        specifier: workspace:^
+        version: link:../../packages/tsconfig
       '@core/types':
         specifier: workspace:^
         version: link:../../packages/types
@@ -44,6 +47,10 @@ importers:
       typescript:
         specifier: ^5.4.4
         version: 5.4.4
+
+  packages/ts: {}
+
+  packages/tsconfig: {}
 
   packages/types:
     devDependencies:

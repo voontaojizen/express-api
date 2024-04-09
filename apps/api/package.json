@@ -17,6 +17,7 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
+    "@core/tsconfig": "workspace:^",
     "@core/types": "workspace:^",
     "@core/utils": "workspace:^",
     "@types/cors": "^2.8.17",

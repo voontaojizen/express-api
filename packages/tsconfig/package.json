@@ -1,0 +1,8 @@
+{
+  "name": "@core/tsconfig",
+  "version": "1.0.0",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
