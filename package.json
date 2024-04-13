@@ -11,7 +11,7 @@
     "lint": "turbo lint"
   },
   "packageManager": "pnpm@8.9.0",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "@core/tsconfig": "workspace:^"
+  }
 }
