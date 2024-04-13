@@ -6,12 +6,14 @@ import { returnBlogs } from '@core/utils';
 import type { Blog } from '@core/types';
 import axios from 'axios';
 
+export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
 const App: Component = () => {
   const [blogs, setBlogs] = createSignal<Blog[]>([]);
 
   onMount(() => {
     console.log('trigger');
-    axios.get('http://localhost:8000/api/blogs').then((res) => {
+    axios.get(`${API_BASE_URL}/blogs`).then((res) => {
       setBlogs(res.data.blogs);
     });
   });
